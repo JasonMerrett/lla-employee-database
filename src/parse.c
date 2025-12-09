@@ -127,9 +127,6 @@ int validate_db_header(int fd, struct dbheader_t **headerOut) {
     header->magic = ntohl(header->magic);
     header->filesize = ntohl(header->filesize);
 
-    printf("Header version: %d\n", header->magic);
-    printf("Header magic: %d\n", HEADER_MAGIC);
-
     if (header->magic != HEADER_MAGIC) {
         printf("Improper magic number\n");
         free(header);
