@@ -1,0 +1,4 @@
+*.db
+obj/cli/*.o
+obj/srv/*.o
+bin
